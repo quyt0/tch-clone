@@ -1,0 +1,22 @@
+:root {
+    --text-color: #333;
+    --primary-color: #EA8025;
+    --header-height: 100px;
+}
+
+* {
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Baron;
+    src: url("/fonts/BaronNeue-Black.otf");
+}

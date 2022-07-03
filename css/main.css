@@ -1,0 +1,125 @@
+.header {
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header__topbar-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: #fff;
+}
+
+.topbar-item {
+    padding: 10px 50px;
+    font-size: 1.4rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.topbar-item__icon {
+    color: var(--primary-color);
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 66px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #D9D8D5;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 200px;
+}
+
+.logo-main {
+    width: 100%;
+}
+
+.navbar-list {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar-item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar-link {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 100%;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-link__icon {
+    font-size: 1.2rem;
+}
+
+.owl-carousel {
+    margin-top: var(--header-height);
+    position: relative;
+}
+
+.owl-nav {
+    margin: 0 !important;
+    font-size: 5rem;
+    width: 0;
+    height: 0;
+}
+
+.owl-nav button span {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    position: absolute;
+}
+
+.owl-prev span,
+.owl-next span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-prev span {
+    left: 40px;
+}
+
+.owl-next span {
+    right: 40px;
+}
+
+.owl-dots {
+    position: absolute;
+    top: calc(100% - 19px);
+    left: 0;
+    right: 0;
+}
+
+.owl-dot span {
+    box-shadow: rgb(6 24 44 / 18%) 0px 0px 0px 2px, rgb(6 24 44 / 0%) 0px 4px 6px -1px, rgb(255 255 255 / 0%) 0px 1px 0px inset !important;
+}
