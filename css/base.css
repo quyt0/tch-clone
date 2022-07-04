@@ -37,15 +37,15 @@ html {
 
 @font-face {
     font-family: Baron;
-    src: url("/fonts/BaronNeue-Black.otf");
+    src: url("../fonts/BaronNeue-Black.otf");
 }
 
 @font-face {
     font-family: Gladifilthefte;
-    src: url("/fonts/Gladifilthefte.ttf");
+    src: url("../fonts/Gladifilthefte.ttf");
 }
 
 @font-face {
     font-family: FSHarabara;
-    src: url("/fonts/FSHarabara.ttf");
+    src: url("../fonts/FSHarabara.ttf");
 }
