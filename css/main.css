@@ -290,7 +290,7 @@
     color: #7D5230;
     font-size: 9.6rem;
     text-align: center;
-    font-family: 'Baron', sans-serif;
+    font-family: 'Baron';
     margin-bottom: 8px;
 }
 
@@ -326,14 +326,14 @@
 
 .cloudfee-text {
     margin: 0;
-    font-family: 'Baron', sans-serif;
+    font-family: 'Baron';
     font-size: 2.4rem;
     color: #7D5230;
 }
 
 .creme-brulee-text {
     margin: 0;
-    font-family: 'Gladifilthefte', sans-serif;
+    font-family: 'Gladifilthefte';
     font-weight: unset;
     font-size: 8rem;
     color: #7D5230;
@@ -349,7 +349,7 @@
 
 .creamy-text {
     margin: 8px 0;
-    font-family: 'FSHarabara', sans-serif;
+    font-family: 'FSHarabara';
     font-size: 8rem;
     color: #7D5230;
 }
