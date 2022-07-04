@@ -11,15 +11,21 @@
     <script src="./css/owlcarousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="./css/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./fonts/fontawesome-611/css/all.min.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="bEyOCHzC"></script>
 </head>
 <body>
     <div id="main">
         <header class="header">
-            <ul class="header__topbar-list">
+            <ul class="header__topbar-list" id="topbar">
                 <li class="topbar-item">
                     <i class="fa-solid fa-location-dot topbar-item__icon"></i>
                     155 cửa hàng khắp cả nước
@@ -217,7 +223,358 @@
             <a href="#" class="banner__item banner__item-2">
                 <img src="./img/banner/banner2.jpg" alt="">
             </a>
+            <a href="#" class="banner__item banner__item-3">
+                <img src="./img/banner/banner3.jpg" alt="">
+            </a>
         </div>
+
+        <div class="container menu-newest">
+            <div class="row menu-newest__row">
+                <div class="col-lg-6 menu-newest-item">
+                    <a href="#" class="menu-newest-item-img-link">
+                        <img src="./img/menu-newest/feature.jpg" class="menu-newest-item__img" alt="CloudFee">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row menu-newest-item-row">
+                        <div class="col-lg-6 menu-newest-item menu-newest-item--new-label">
+                            <a href="#" class="menu-newest-item-img-link">
+                                <img src="./img/menu-newest/creamy-almond.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
+                            </a>
+                            <a href="#" class="menu-newest-item-title">CloudFee Creamy Hạnh Nhân Nướng</a>
+                            <span class="menu-newest-item-price">39.000₫</span>
+                        </div>
+                        <div class="col-lg-6 menu-newest-item menu-newest-item--new-label">
+                            <a href="#" class="menu-newest-item-img-link">
+                                <img src="./img/menu-newest/creamy-coconut.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
+                            </a>
+                            <a href="#" class="menu-newest-item-title">CloudFee Creamy Pandan Coconut</a>
+                            <span class="menu-newest-item-price">39.000₫</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-newest__row">
+                <div class="col-lg-6">
+                    <div class="row menu-newest-item-row">
+                        <div class="col-lg-6 menu-newest-item">
+                            <a href="#" class="menu-newest-item-img-link">
+                                <img src="./img/menu-newest/creamy-caramel.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
+                            </a>
+                            <a href="#" class="menu-newest-item-title">CloudFee Creamy Caramel</a>
+                            <span class="menu-newest-item-price">39.000₫</span>
+                        </div>
+                        <div class="col-lg-6 menu-newest-item">
+                            <a href="#" class="menu-newest-item-img-link">
+                                <img src="./img/menu-newest/creamy-almond-brulee.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
+                            </a>
+                            <a href="#" class="menu-newest-item-title">CloudFee Creme Brulee Hạnh Nhân Nướng</a>
+                            <span class="menu-newest-item-price">49.000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row menu-newest-item-row">
+                        <div class="col-lg-6 menu-newest-item">
+                            <a href="#" class="menu-newest-item-img-link">
+                                <img src="./img/menu-newest/creamy-caramel-brulee.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
+                            </a>
+                            <a href="#" class="menu-newest-item-title">CloudFee Creme Brulee Caramel</a>
+                            <span class="menu-newest-item-price">49.000₫</span>
+                        </div>
+                        <div class="col-lg-6 menu-newest-item">
+                            <a href="#" class="menu-newest-item-img-link">
+                                <img src="./img/menu-newest/creamy-ovaltine-brulee.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
+                            </a>
+                            <a href="#" class="menu-newest-item-title">CloudFee Creme Brulee Ovaltine</a>
+                            <span class="menu-newest-item-price">49.000₫</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cloudfee">
+            <h1 class="cloudfee__heading">CLOuDFEE</h1>
+            <p class="cloudfee__desc">
+                Được kết hợp từ <span class="cloudfee__desc text-bold">Cloud</span> 
+                (đám mây) và cof<span class="cloudfee__desc text-bold">Fee</span> 
+                (cà phê), 
+                <span class="cloudfee__desc text-bold">CloudFee</span> 
+                gợi mở về một thế hệ cà phê mới, êm mượt như mây.
+            </p>
+            <div class="container">
+                <div class="row creme-brulee">
+                    <div class="col-lg-6 creme-brulee__img-wrapper">
+                        <img src="./img/cloudfee/creme-brulee.png" class="creme-brulee__img" alt="">
+                    </div>
+                    <div class="col-lg-6 creme-brulee__body">
+                        <h2 class="cloudfee-text">CLOuDFEE</h2>
+                        <h2 class="creme-brulee-text">Creme Brulee</h2>
+                        <p class="creme-brulee-desc">
+                            <span class="text-bold">Thức uống "chiều chuộng bản thân" bậc nhất</span>
+                             cho những ai thích vị ngọt ngào hay muốn thưởng thức sự kết hợp độc đáo giữa món tráng miệng và thức uống.
+                        </p>
+                        <a href="#" class="btn btn--primary">Thử ngay</a>
+                    </div>
+                </div>
+                <div class="row cremy">
+                    <div class="col-lg-6 creme-brulee__body">
+                        <h2 class="cloudfee-text">CLOuDFEE</h2>
+                        <h2 class="creamy-text">Creamy</h2>
+                        <p class="cremy-desc">
+                            <span class="text-bold">Thức uống "đánh thức" năng lượng ngày mới</span>
+                            hợp cho những ai mới bước vào thế giới cà phê hoặc ghiền cà phê nhưng muốn khám phá thêm nhiều hương vị mới.
+                        </p>
+                        <a href="#" class="btn btn--primary">Thử ngay</a>
+                    </div>
+                    <div class="col-lg-6 creamy__img-wrapper">
+                        <img src="./img/cloudfee/creamy.png" class="creamy__img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="owl-carousel owl-theme store">
+            <div class="store__item">
+                <div class="container">
+                    <div class="row store-row">
+                        <div class="col-lg-4 store-body">
+                            <h3 class="store-title">
+                                The Coffee House
+                                <br>
+                                149 Nguyễn Văn Cừ, Hà Nội
+                            </h3>
+                            <p class="store-desc">
+                                Nhà mới Nguyễn Văn Cừ nổi bật với tone màu cam và xanh cổ vịt sang trọng, ẩn mình sau những ô cửa kính bắt ánh sáng tự nhiên, là hương cà phê nguyên bản đang chờ bạn thưởng thức
+                            </p>
+                            <a href="#" class="btn btn--primary">Tìm hiểu thêm</a>
+                        </div>
+                        <div class="col-lg-8 store-img">
+                            <div class="store__img-slider">
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img1.jpg" class="store-main-img" alt="">
+                                </div>
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img2.jpg" class="store-main-img" alt="">
+                                </div>
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img3.jpg" class="store-main-img" alt="">
+                                </div>
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img4.jpg" class="store-main-img" alt="">
+                                </div>
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img5.jpg" class="store-main-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store__item">
+                <div class="container">
+                    <div class="row store-row">
+                        <div class="col-lg-4 store-body">
+                            <h3 class="store-title">
+                                The Coffee House
+                                <br>
+                                149 Nguyễn Văn Cừ, Hà Nội
+                            </h3>
+                            <p class="store-desc">
+                                Nhà mới Nguyễn Văn Cừ nổi bật với tone màu cam và xanh cổ vịt sang trọng, ẩn mình sau những ô cửa kính bắt ánh sáng tự nhiên, là hương cà phê nguyên bản đang chờ bạn thưởng thức
+                            </p>
+                            <a href="#" class="btn btn--primary">Tìm hiểu thêm</a>
+                        </div>
+                        <div class="col-lg-8 store-img">
+                            <div class="store__img-slider">
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img1.jpg" class="store-main-img" alt="">
+                                </div>
+                                <div class="store__img-item">
+                                    <img src="./img/store/149-nguyen-van-cu/img1.jpg" class="store-main-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="blog">
+            <div class="blog__heading">
+                <img src="./img/logo/cup.png" class="blog__heading-icon" alt="">
+                <h1 class="heading-title">Chuyện Nhà</h1>
+            </div>
+            <div class="blog__category">
+                <div class="category-heading">
+                    <div class="container">
+                        <div class="row category-item-row">
+                            <h2 class="category-title">Coffeeholic</h2>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/coffeeholic/img1.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">11/03/2022</p>
+                                    <a href="#" class="category-item-title">Cách Nhận Biết Hương Vị Cà Phê Robusta Nguyên Chất Dễ Dàng Nhất</a>
+                                    <p class="category-item-desc">Cùng Arabica, Robusta cũng là loại cà phê nổi tiếng được sử dụng phổ biến ở Việt Nam và nhiều nước khác trên thế giới. Với nhiều đặc điểm riêng, không quá khó để có thể nhận ra hương vị của loại cà phê trứ danh này.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/coffeeholic/img2.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">07/03/2022</p>
+                                    <a href="#" class="category-item-title">Bật Mí Nhiệt Độ Lý Tưởng Để Pha Cà Phê Ngon, Đậm Đà Hương Vị</a>
+                                    <p class="category-item-desc">Nhiệt độ nước là một yếu tố quan trọng để có thể tạo nên những tách cà phê thơm ngon. Bạn đã biết nhiệt độ nước lý tưởng để pha...</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/coffeeholic/img3.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">04/03/2022</p>
+                                    <a href="#" class="category-item-title">Cách Pha Cà Phê Phin Thơm Ngon Tròn Vị</a>
+                                    <p class="category-item-desc">Có nhiều cách để pha một ly cà phê ngon, nhưng đối với nhiều người Việt giây phút đợi chờ những giọt cà phê rơi từ chiếc phin đã trở thành...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row category-item-row">
+                            <h2 class="category-title">Teaholic</h2>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/teaholic/img1.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">07/06/2022</p>
+                                    <a href="#" class="category-item-title">10 Lợi Ích Không Ngờ Của Trà Hoa Hibiscus</a>
+                                    <p class="category-item-desc">Với rất nhiều lợi ích vượt trội, trà hoa Hibiscus được nhiều chị em ưu tiên chọn lựa để tăng cường sức khỏe, cải thiện sắc đẹp và giúp tinh...</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/teaholic/img2.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">01/06/2022</p>
+                                    <a href="#" class="category-item-title">Bạn Có Đang Nhầm Lẫn Giữa Atiso Đỏ Và Atiso Xanh?</a>
+                                    <p class="category-item-desc">Trà Atiso vốn là thức uống phổ biến tại Việt Nam và được biết đến với 2 loại: Atiso đỏ (Hibiscus) và Atiso xanh. Thế nhưng, hai loại này lại...</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/teaholic/img3.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">25/05/2022</p>
+                                    <a href="#" class="category-item-title">Uống Trà Hibiscus Có Bị Mất Ngủ Hay Không?</a>
+                                    <p class="category-item-desc">Trà hoa Hibiscus luôn nằm trong top những loại trà healthy được nhiều người ưa chuộng bởi sở hữu nhiều dược tính tốt cho sức khỏe và sắc đẹp. Tuy...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row category-item-row">
+                            <h2 class="category-title">Blog</h2>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/blog/img1.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">14/02/2022</p>
+                                    <a href="#" class="category-item-title">Lễ Tình Nhân, Cùng Crush Đi Đâu?</a>
+                                    <p class="category-item-desc">Tadaaaa, hết Tết thì Valentine đầy yêu thương lại đang đến rồi nè. Lễ tình nhân, dẫn crush đi quán nào? Nhất định phải cùng người ấy đến Nhà hẹn...</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/blog/img2.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">11/02/2022</p>
+                                    <a href="#" class="category-item-title">The Coffee House - Quán Cà Phê Lý Tưởng Để Hội Họp Bạn Bè Mùa Tết Này</a>
+                                    <p class="category-item-desc">Những ngày cuối năm, đầu năm mới, bạn lên kế hoạch để gặp gỡ những người yêu, thương, quý, mến... Vậy bạn đã tìm được điểm hẹn lý tưởng chưa,...</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 category-item">
+                                <a href="#" class="category-item__img-wrapper">
+                                    <img src="./img/blog/blog/img3.jpg" class="category-item__img" alt="">
+                                </a>
+                                <div class="category-item__body">
+                                    <p class="category-item-date">24/01/2022</p>
+                                    <a href="#" class="category-item-title">Chai Fresh Luôn Bên Bạn Trong Mọi Khoảnh Khắc</a>
+                                    <p class="category-item-desc">Với sự kết nối của The Coffee House, những thức trà và cà phê dạng chai Fresh sẽ là người bạn thân thiết, tuyệt vời của bạn trên mọi nẻo...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col-lg-3 footer-item">
+                        <h4 class="footer-heading">Giới thiệu</h4>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Về chúng tôi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Sản phẩm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Khuyến mãi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Chuyện cà phê</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Cửa hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-item">
+                        <h4 class="footer-heading">Điều khoản</h4>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Quy tắc bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-item">
+                        <ul class="footer-info">
+                            <li class="footer-item-info footer-item--with-icon">
+                                <i class="fa-solid fa-phone footer-text"></i>
+                                <a href="tel:+8418006936" class="footer-link footer-text footer-text-bold">Đặt hàng: 1800 6936</a>
+                            </li>
+                            <li class="footer-item-info footer-item--with-icon">
+                                <i class="fa-solid fa-location-dot footer-text"></i>
+                                <p class="footer-text footer-text-bold">Liên hệ</a>
+                            </li>
+                            <li class="footer-item-info footer-item--with-icon">
+                                <p class="footer-text">Tầng 3-4 Hub Building 195/10E Điện Biên Phủ, P.15 , Q.Bình Thạnh, TP.Hồ Chí Minh</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-item">
+                        <ul class="footer-info">
+                            <div class="fb-page" data-href="https://www.facebook.com/The.Coffee.House.2014" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/The.Coffee.House.2014" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/The.Coffee.House.2014">The Coffee House</a></blockquote></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="./js/script.js"></script>

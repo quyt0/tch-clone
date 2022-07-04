@@ -14,9 +14,38 @@ html {
     font-size: 62.5%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+.text-bold {
+    font-weight: 600;
+}
+
+.btn {
+    display: block;
+    max-width: 282px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn--primary {
+    color: #fff;
+    background: var(--primary-color);
+}
 
 @font-face {
     font-family: Baron;
     src: url("/fonts/BaronNeue-Black.otf");
+}
+
+@font-face {
+    font-family: Gladifilthefte;
+    src: url("/fonts/Gladifilthefte.ttf");
+}
+
+@font-face {
+    font-family: FSHarabara;
+    src: url("/fonts/FSHarabara.ttf");
 }
