@@ -34,18 +34,3 @@ html {
     color: #fff;
     background: var(--primary-color);
 }
-
-@font-face {
-    font-family: Baron;
-    src: url("../fonts/BaronNeue-Black.otf");
-}
-
-@font-face {
-    font-family: Gladifilthefte;
-    src: url("../fonts/Gladifilthefte.ttf");
-}
-
-@font-face {
-    font-family: FSHarabara;
-    src: url("../fonts/FSHarabara.ttf");
-}
