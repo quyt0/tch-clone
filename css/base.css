@@ -34,3 +34,23 @@ html {
     color: #fff;
     background: var(--primary-color);
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes runUp {
+    from {
+        opacity: 0;
+        top: calc(var(--header-height) + 90px);
+    }
+    to {
+        opacity: 1;
+        top: calc(var(--header-height));
+    }
+}

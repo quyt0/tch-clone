@@ -3,6 +3,10 @@
     .mobile-bars {
         display: none;
     }
+
+    .mobile-navbar-modal {
+        display: none;
+    }
 }
 
 /* PC low resolution (<= 1100px) */
@@ -12,6 +16,10 @@
     }
 
     .mobile-bars {
+        display: none;
+    }
+
+    .mobile-navbar-modal {
         display: none;
     }
 }
@@ -35,6 +43,11 @@
     .logo-wrapper {
         flex: 1;
         justify-content: center;
+        transform: translateX(-15px);
+    }
+
+    .cloudfee-text {
+        margin-left: 3px;
     }
 
     .menu-newest__row {
@@ -48,6 +61,79 @@
     .menu-newest-item.menu-newest-item--new-label::after {
         left: -22px;
     }
+
+    .mobile-navbar-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        animation: fadeIn linear 0.3s;
+        display: none;
+    }
+
+    .mobile-navbar-modal.open {
+        display: block;
+    }
+
+    .mobile-navbar-inner {
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        right: 30%;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow-y: auto;
+    }
+
+    .mobile-navbar-close {
+        font-size: 2rem;
+        padding: 15px;
+    }
+    
+    .mobile-navbar-item {
+        border-bottom: 1px solid #e5e5fa;
+    }
+
+    .mobile-navbar-link {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 15px 0 15px 15px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .mobile-navbar-item--has-child .sub-nav {
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    .sub-nav__item-title {
+        font-size: 1.3rem;
+        border: none;
+    }
+
+    .sub-nav-content {
+        margin: 5px 0 0 5px;
+    }
+
+    .sub-nav-content-link {
+        font-size: 1.3rem;
+        padding: 5px 0;
+    }
+
+    .mobile-navbar-item-checkbox:checked ~ .sub-nav {
+        display: block;
+    }
+
 }
 
 /*  Tablet (<= 1024px and >= 650px) */
