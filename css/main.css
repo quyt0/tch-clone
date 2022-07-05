@@ -1,3 +1,7 @@
+#main {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     position: fixed;
@@ -49,15 +53,14 @@
     border-bottom: 1px solid #D9D8D5;
 }
 
-.logo-wrapper {
+.logo-wrapper, .logo-link {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    width: 200px;
+    height: 100%;
 }
 
 .logo-main {
-    width: 100%;
+    width: 200px;
 }
 
 .navbar-list {
@@ -81,9 +84,6 @@
     position: relative;
 }
 
-.navbar-item--has-child:hover .sub-nav {
-    display: flex;
-}
 
 .navbar-item--has-child .sub-nav {
     background-color: rgba(255, 255, 255, 0.95);
@@ -101,6 +101,10 @@
     padding: 24px 195px;
     animation: runUp 0.45s ease-in;
     display: none;
+}
+
+.navbar-item--has-child:hover .sub-nav {
+    display: flex;
 }
 
 @keyframes runUp {
@@ -185,6 +189,7 @@
 .owl-carousel.banner .owl-nav button span {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     position: absolute;
+    padding: 0px 15px;
 }
 
 .owl-carousel.banner .owl-prev span,
@@ -194,11 +199,11 @@
 }
 
 .owl-carousel.banner .owl-prev span {
-    left: 40px;
+    left: 25px;
 }
 
 .owl-carousel.banner .owl-next span {
-    right: 40px;
+    right: 25px;
 }
 
 .owl-carousel.banner .owl-dots {
@@ -279,10 +284,6 @@
 .cloudfee {
     background: #FFF7E1 url(/img/cloudfee/background.png) top center / cover no-repeat;
     padding: 48px 0 45px 0;
-}
-
-.cloudfee {
-
 }
 
 .cloudfee__heading {

@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./fonts/Gladifilthefte/stylesheet.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./fonts/fontawesome-611/css/all.min.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="bEyOCHzC"></script>
 </head>
@@ -44,9 +44,13 @@
             </ul>
 
             <nav class="header__navbar">
-                <a href="/" class="logo-wrapper">
-                    <img src="./img/logo/logo-tch.svg" alt="Logo The Coffee House" class="logo-main">
-                </a>
+                <i class="fa-solid fa-bars mobile-bars"></i>
+
+                <div class="logo-wrapper">
+                    <a href="/" class="logo-link">
+                        <img src="./img/logo/logo-tch.svg" alt="Logo The Coffee House" class="logo-main">
+                    </a>
+                </div>
 
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -221,33 +225,42 @@
 
         <div class="owl-carousel owl-theme banner">
             <a href="#" class="banner__item banner__item-1">
-                <img src="./img/banner/banner1.jpg" alt="">
+                <picture>
+                    <source srcset="./img/banner/mobile/banner1.jpg" media="(max-width: 650px)">
+                    <img srcset="./img/banner/banner1.jpg" alt="">
+                </picture>
             </a>
             <a href="#" class="banner__item banner__item-2">
-                <img src="./img/banner/banner2.jpg" alt="">
+                <picture>
+                    <source srcset="./img/banner/mobile/banner2.jpg" media="(max-width: 650px)">
+                    <img srcset="./img/banner/banner2.jpg" alt="">
+                </picture>
             </a>
             <a href="#" class="banner__item banner__item-3">
-                <img src="./img/banner/banner3.jpg" alt="">
+                <picture>
+                    <source srcset="./img/banner/mobile/banner3.jpg" media="(max-width: 650px)">
+                    <img srcset="./img/banner/banner3.jpg" alt="">
+                </picture>
             </a>
         </div>
 
         <div class="container menu-newest">
             <div class="row menu-newest__row">
-                <div class="col-lg-6 menu-newest-item">
+                <div class="col-lg-6 col-md-12 col-12 menu-newest-item">
                     <a href="#" class="menu-newest-item-img-link">
                         <img src="./img/menu-newest/feature.jpg" class="menu-newest-item__img" alt="CloudFee">
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12 col-12">
                     <div class="row menu-newest-item-row">
-                        <div class="col-lg-6 menu-newest-item menu-newest-item--new-label">
+                        <div class="col-6 menu-newest-item menu-newest-item--new-label">
                             <a href="#" class="menu-newest-item-img-link">
                                 <img src="./img/menu-newest/creamy-almond.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
                             </a>
                             <a href="#" class="menu-newest-item-title">CloudFee Creamy Hạnh Nhân Nướng</a>
                             <span class="menu-newest-item-price">39.000₫</span>
                         </div>
-                        <div class="col-lg-6 menu-newest-item menu-newest-item--new-label">
+                        <div class="col-6 menu-newest-item menu-newest-item--new-label">
                             <a href="#" class="menu-newest-item-img-link">
                                 <img src="./img/menu-newest/creamy-coconut.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
                             </a>
@@ -258,16 +271,16 @@
                 </div>
             </div>
             <div class="row menu-newest__row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="row menu-newest-item-row">
-                        <div class="col-lg-6 menu-newest-item">
+                        <div class="col-6 menu-newest-item">
                             <a href="#" class="menu-newest-item-img-link">
                                 <img src="./img/menu-newest/creamy-caramel.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
                             </a>
                             <a href="#" class="menu-newest-item-title">CloudFee Creamy Caramel</a>
                             <span class="menu-newest-item-price">39.000₫</span>
                         </div>
-                        <div class="col-lg-6 menu-newest-item">
+                        <div class="col-6 menu-newest-item">
                             <a href="#" class="menu-newest-item-img-link">
                                 <img src="./img/menu-newest/creamy-almond-brulee.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
                             </a>
@@ -276,16 +289,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="row menu-newest-item-row">
-                        <div class="col-lg-6 menu-newest-item">
+                        <div class="col-6 menu-newest-item">
                             <a href="#" class="menu-newest-item-img-link">
                                 <img src="./img/menu-newest/creamy-caramel-brulee.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
                             </a>
                             <a href="#" class="menu-newest-item-title">CloudFee Creme Brulee Caramel</a>
                             <span class="menu-newest-item-price">49.000₫</span>
                         </div>
-                        <div class="col-lg-6 menu-newest-item">
+                        <div class="col-6 menu-newest-item">
                             <a href="#" class="menu-newest-item-img-link">
                                 <img src="./img/menu-newest/creamy-ovaltine-brulee.jpg" class="menu-newest-item__img" alt="Hạnh nhân nướng">
                             </a>
@@ -308,10 +321,10 @@
             </p>
             <div class="container">
                 <div class="row creme-brulee">
-                    <div class="col-lg-6 creme-brulee__img-wrapper">
+                    <div class="col-lg-6 col-md-6 creme-brulee__img-wrapper">
                         <img src="./img/cloudfee/creme-brulee.png" class="creme-brulee__img" alt="">
                     </div>
-                    <div class="col-lg-6 creme-brulee__body">
+                    <div class="col-lg-6 col-md-6 creme-brulee__body">
                         <h2 class="cloudfee-text">CLOuDFEE</h2>
                         <h2 class="creme-brulee-text">Creme Brulee</h2>
                         <p class="creme-brulee-desc">
@@ -322,7 +335,7 @@
                     </div>
                 </div>
                 <div class="row cremy">
-                    <div class="col-lg-6 creme-brulee__body">
+                    <div class="col-lg-6 col-md-6 creme-brulee__body">
                         <h2 class="cloudfee-text">CLOuDFEE</h2>
                         <h2 class="creamy-text">Creamy</h2>
                         <p class="cremy-desc">
@@ -331,7 +344,7 @@
                         </p>
                         <a href="#" class="btn btn--primary">Thử ngay</a>
                     </div>
-                    <div class="col-lg-6 creamy__img-wrapper">
+                    <div class="col-lg-6 col-md-6 creamy__img-wrapper">
                         <img src="./img/cloudfee/creamy.png" class="creamy__img" alt="">
                     </div>
                 </div>
